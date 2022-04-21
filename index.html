@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Socket.io Chat</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SOCKET.IO CHAT</h1>
+        <div class="util-buttons">
+            <button type="submit" id="delete-btn" class="util-btn delete-btn">Delete history</button>
+            <button type="submit" id="clear-btn" class="util-btn clear-btn">Clear notifications</button>
+            <button type="submit" id="logout-btn" class="util-btn logout-btn">Log out</button>
+        </div>
+        <div class="chatbox" id="chatbox">
+        </div>
+        <form id="chat-form" class="chat-form">
+            <input type="text" placeholder="Chat here" id="message">
+            <button type="submit" id="send-button" class="send-button">Send</button>
+        </form>
+        <form id="room-form" class="chat-form">
+            <input type="text" placeholder="To user..." id="roomid">
+            <button type="submit" id="join-btn" class="send-button">Join</button>
+        </form>
+    </div>
+</body>
+</html>
